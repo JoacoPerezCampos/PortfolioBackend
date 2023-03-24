@@ -23,6 +23,8 @@ public class Person{
     private String lastname;
 
     private String profileImgUrl;
+    
+    private String about;
 
     /**Getters & Setters**/
     public int getId() {
@@ -55,6 +57,14 @@ public class Person{
 
     public void setProfileImgUrl(String profileImgUrl) {
         this.profileImgUrl = profileImgUrl;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
     }
 
 }

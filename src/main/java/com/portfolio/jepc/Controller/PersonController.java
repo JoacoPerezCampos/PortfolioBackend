@@ -59,11 +59,14 @@ public class PersonController{
     public Person editPerson(@PathVariable int id,
             @RequestParam("name") String newName,
             @RequestParam("lastname") String newLastname,
-            @RequestParam("profileImgUrl") String newProfileImgUrl) {
+            @RequestParam("profileImgUrl") String newProfileImgUrl,
+            @RequestParam("about") String newAbout)
+            {
         Person person = impPersonService.findPerson(id);
         person.setName(newName);
         person.setLastname(newLastname);
         person.setProfileImgUrl(newProfileImgUrl);
+        person.setAbout(newAbout);
 
         impPersonService.savePerson(person);
         return person;
