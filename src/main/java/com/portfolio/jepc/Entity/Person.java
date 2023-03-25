@@ -24,7 +24,21 @@ public class Person{
 
     private String profileImgUrl;
     
+    @NotNull
     private String about;
+    
+    //Contructor
+
+    public Person() {
+    }
+
+    public Person(String name, String lastname, String profileImgUrl, String about) {
+        this.name = name;
+        this.lastname = lastname;
+        this.profileImgUrl = profileImgUrl;
+        this.about = about;
+    }
+    
 
     /**Getters & Setters**/
     public int getId() {
