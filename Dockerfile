@@ -1,4 +1,4 @@
-FROM amazoncorretto: 17-alpine-jdk
+FROM amazoncorretto:alpine-latest
 MAINTAINER JoacoPerezCampos
 COPY target/jepc-0.0.1-SNAPSHOT.jar jepc-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/jepc-0.0.1-SNAPSHOT.jar"]
